@@ -153,8 +153,12 @@ app.post("/update", function(req,res){
 
 // });
 
+let port = process.env.PORT; // herokus
 
+if (port == null || port == "") {
+  port = 3000; // if port is null or empty string, use local one
+}
 
-app.listen(3000, function() {
-  console.log("Server started on port 3000");
+app.listen(port, function() {
+  console.log("Server started successfully");
 });
