@@ -13,7 +13,7 @@ app.use(express.static("public"));
 
 // MONGO DB
 // Create a new MongoDB db or connect to one existing
-mongoose.connect("mongodb+srv://admin-alex:SparveN23@cluster0.nudk0.mongodb.net/todolistDB");
+mongoose.connect("mongodb+srv://admin-alex:Testaren123@cluster0.nudk0.mongodb.net/todolistDB");
 
 // Item Schema, one field, name, String
 const itemsSchema = new mongoose.Schema ({
